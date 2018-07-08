@@ -1,0 +1,13 @@
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+<h1>Welcome! </h1>
+<h3>Please select one option: </h3>
+    <ul>
+        <a href="/list/">See the users list<br></a>
+        <a href="/add/">Add users to the list<br></a>
+    </ul>
